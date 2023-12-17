@@ -10,6 +10,14 @@ After installing `MediaWiki Dump Generator` you should be able to use the `dumpg
 dumpgenerator [args]
 ```
 
+`Private wikis`<br> 
+To dump a private wiki you will have to use a login that has at least read permission on the wiki:<br>
+```bash
+(.venv) uwe@hpi5-p8:~/PycharmProjects/mediawiki-dump-generator$ dumpgenerator --xml --xmlrevisions --images --user Butayama --pass SecretPassword https://buta.miraheze.org
+```
+The above code successful ran on the 17th of December 2023 
+Substitute SecretPassword with an actual password.<br>
+
 For a brief summary of the `dumpgenerator` command-line options:
 
 ```bash
